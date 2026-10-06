@@ -74,7 +74,7 @@ VAR SelectedScenario = SELECTEDVALUE(Stress_Parameters[Scenario Name])
 RETURN
 CALCULATE(
     SUMX(
-        vw_daily_portfolio_exposure,
+        exposure_view,
         VAR CurrentSector = exposure_view[sector]
         VAR Shock = 
             LOOKUPVALUE(
